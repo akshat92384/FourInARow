@@ -30,7 +30,11 @@ public class Frame extends JPanel implements ActionListener, KeyListener  {
 			board[board.length-1][i] = "-";
 		}
 		
-		
+		board[0][0] = " ";
+		board[0][board[0].length-1] = " ";
+		for (int i = 1 ; i < board[0].length-1; i ++) {
+			board[0][i]= i+"";
+		}
 	}
 	public String toString() {
 		String result = "";
