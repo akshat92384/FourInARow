@@ -235,12 +235,6 @@ public class Frame extends JPanel implements ActionListener, KeyListener  {
 					if (board[i-1][j-1].equals("O")&&board[i-2][j-2].equals("O")&&board[i-3][j-3].equals("O")) {
 						redWon = true;
 					}
-					if (board[i+1][j+1].equals("O")&&board[i+2][j+2].equals("O")&&board[i+3][j+3].equals("O")) {
-						redWon = true;
-					}
-					if (board[i+1][j-1].equals("O")&&board[i+2][j-2].equals("O")&&board[i+3][j-3].equals("O")) {
-						redWon = true;
-					}
 					if (board[i-1][j+1].equals("O")&&board[i-2][j+2].equals("O")&&board[i-3][j+3].equals("O")) {
 						redWon = true;
 					}
@@ -258,16 +252,10 @@ public class Frame extends JPanel implements ActionListener, KeyListener  {
 					if (board[i][j+1].equals("X")&&board[i][j+2].equals("X")&&board[i][j+3].equals("X")) {
 						yellowWon = true;
 					}
-					if (board[i+1][j+1].equals("X")&&board[i+2][j+2].equals("X")&&board[i+3][j+3].equals("X")) {
-						yellowWon = true;
-					}
 					if (board[i-1][j-1].equals("X")&&board[i-2][j-2].equals("X")&&board[i-3][j-3].equals("X")) {
 						yellowWon = true;
 					}
 					if (board[i-1][j+1].equals("X")&&board[i-2][j+2].equals("X")&&board[i-3][j+3].equals("X")) {
-						yellowWon = true;
-					}
-					if (board[i+1][j-1].equals("X")&&board[i+2][j-2].equals("X")&&board[i+3][j-13].equals("X")) {
 						yellowWon = true;
 					}
 				}
